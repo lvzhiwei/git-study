@@ -24,11 +24,6 @@ interface Hello{
 
 class User implements Test, Hello
 {
-    public function test()
-    {
-        $age = 1111;
-        echo "hello world";
-    }
     public function echoHello()
     {
 
@@ -41,9 +36,7 @@ class User implements Test, Hello
 
     public function hello()
     {
-        echo 'hello';
         // TODO: 实现 hello() 方法.
-        return 111;
         $this->test(1,2,3);
         return "Hello, my name is lzw, age is 18";
     }
