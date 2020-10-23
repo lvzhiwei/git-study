@@ -9,7 +9,7 @@ $b = 2;
 $c = 3;
 $sum = $a + $b*2;
 
-echo $sum;
+//echo $sum;
 
 interface Test
 {
@@ -32,13 +32,30 @@ class User implements Test, Hello
     public function echoHello()
     {
 
-        // TODO: 瀹炵幇 echoHello() 鏂规硶.
+        // TODO: 实现 echoHello() 方法.
+        $name = 'lzw';
+        $age = 20;
+
+        echo $this->hello();
     }
 
     public function hello()
     {
         echo 'hello';
-        // TODO: 瀹炵幇 hello() 鏂规硶.
+        // TODO: 实现 hello() 方法.
         return 111;
+        $this->test(1,2,3);
+        return "Hello, my name is lzw, age is 18";
+    }
+
+    public function test($a, $b, $c)
+    {
+        $sum = $a + $b;
+        $sum += $c;
+        $city = 'sz';
+
+        echo $sum . PHP_EOL;
     }
 }
+
+(new User())->echoHello();
