@@ -18,15 +18,27 @@ interface Test
     public function hello();
 }
 
-class User implements Test
+interface Hello{
+
+}
+
+class User implements Test, Hello
 {
+    public function test()
+    {
+        $age = 1111;
+        echo "hello world";
+    }
     public function echoHello()
     {
-        // TODO: Implement echoHello() method.
+
+        // TODO: 实现 echoHello() 方法.
     }
 
     public function hello()
     {
-        // TODO: Implement hello() method.
+        echo 'hello';
+        // TODO: 实现 hello() 方法.
+        return 111;
     }
 }
