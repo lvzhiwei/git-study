@@ -26,8 +26,7 @@ class User implements Test, Hello
 {
     public function echoHello()
     {
-
-        // TODO: 实现 echoHello() 方法.
+	    // echoHello function
         $name = 'lzw';
         $age = 20;
 
@@ -36,7 +35,7 @@ class User implements Test, Hello
 
     public function hello()
     {
-        // TODO: 实现 hello() 方法.
+    	// hello function
         $this->test(1,2,3);
         return "Hello, my name is lzw, age is 18";
     }
