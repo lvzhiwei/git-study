@@ -29,6 +29,7 @@ class User implements Test, Hello
 	    // echoHello function
         $name = 'lzw';
         $age = 20;
+        $gender = 'male';
 
         echo $this->hello();
     }
