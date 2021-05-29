@@ -21,5 +21,6 @@ $m=30;
 $n=40;
 
 $yes = 'yes';
+$no = 'no';
 
 return 111;
